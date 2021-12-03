@@ -1,6 +1,6 @@
+# Part A:
 forward = 0
 depth = 0
-# Part A:
 with open('day2_input.txt', 'r', encoding='utf-8') as movement:
     for line in movement:
         command, value = line.split()
@@ -14,7 +14,7 @@ with open('day2_input.txt', 'r', encoding='utf-8') as movement:
                 forward += value
 print('Part A:', forward * depth)
 
-# Part A:
+# Part B:
 forward = 0
 depth = 0
 aim = 0
