@@ -15,5 +15,3 @@ for i in range(3, len(depth_readings)):
     if sum(depth_readings[i-3:i]) > sum(depth_readings[i-4:i-1]):
         increases_3 += 1
 print('Part B: ', increases_3)
-
-
