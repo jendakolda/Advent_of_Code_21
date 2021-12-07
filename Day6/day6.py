@@ -1,6 +1,6 @@
 import timeit
 
-with open('day6_input.txt', 'r', encoding='utf-8') as f:
+with open('day6_example.txt', 'r', encoding='utf-8') as f:
     fish = list(map(int, f.read().split(',')))
 
 print(fish)
