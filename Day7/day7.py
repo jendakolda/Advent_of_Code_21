@@ -1,5 +1,5 @@
-import numpy as np
 from scipy.optimize import minimize_scalar
+import statistics
 
 
 def objective_function_A(depth, coords):
@@ -15,8 +15,11 @@ with open('day7_input.txt', 'r', encoding='utf-8') as f:
 
 res_A = minimize_scalar(objective_function_A, args=crab_coords)
 print('Part A:', int(res_A["fun"]))
+print(sum([abs(i - round(statistics.median(crab_coords))) for i in crab_coords]))
 res_B = minimize_scalar(objective_function_B, args=crab_coords)
 print('Part B:', int(res_B["fun"]))
+print(sum([sum(range(1, abs(i - round(statistics.mean(crab_coords))) + 1)) for i in crab_coords]))
+
 
 
 
