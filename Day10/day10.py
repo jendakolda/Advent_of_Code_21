@@ -3,7 +3,6 @@ closing = (')]}>')
 pairs = ('()', '[]', '{}', '<>')
 err_scoring = {')': 3, ']': 57, '}': 1197, '>': 25137}
 
-
 with open('day10_input.txt', 'r', encoding='utf-8') as f:
     chunks = f.read().split('\n')
 
